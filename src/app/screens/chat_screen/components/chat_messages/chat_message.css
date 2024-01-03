@@ -1,0 +1,34 @@
+.message-container {
+    margin: 0.4rem 0;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+
+    .content {
+        max-width: 40%;
+        overflow-wrap: break-word;
+        padding: 0.6rem 1rem;
+        font-size: 1.1rem;
+        border-radius: 1rem;
+        color: #d1d1d1;
+    }
+}
+
+.sent {
+    justify-content: flex-end;
+
+    .content {
+        background-color: #4f04ff21;
+
+    }
+}
+
+.received {
+    justify-content: flex-start;
+
+    .content {
+        background-color: #00c2cb;
+    }
+}

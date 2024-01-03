@@ -1,0 +1,67 @@
+.contact-container {
+    display: grid;
+    grid-template-rows: 15% 100%;
+    overflow: hidden;
+    height: 100vh;
+    background-color: #080420;
+}
+
+.contact-list {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+        width: 0.2rem;
+
+        &-thumb {
+            background-color: #ffffff39;
+            width: 0.1rem;
+            border-radius: 1rem;
+        }
+    }
+}
+
+.contact {
+    background-color: #ffffff39;
+    min-height: 5rem;
+    width: 96%;
+    cursor: pointer;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    gap: 1rem;
+    align-items: center;
+    display: flex;
+    transition: 0.1s ease-in;
+}
+
+.contact-list contact avatar img {
+    height: 3rem;
+}
+
+.contact h3 {
+    color: white;
+}
+
+.selected {
+    background-color: #9186f3;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.brand img {
+    height: 3rem;
+}
+
+.brand h3 {
+    color: white;
+    font-size: 2rem;
+}
